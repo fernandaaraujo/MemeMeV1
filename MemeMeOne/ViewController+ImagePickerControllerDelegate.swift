@@ -25,7 +25,6 @@ extension ViewController: UIImagePickerControllerDelegate {
     
     func generateMemedImage() -> UIImage {
         self.toolBar.isHidden = true
-        self.navigationBar.isHidden = true
         
         UIGraphicsBeginImageContext(self.view.frame.size)
         view.drawHierarchy(in: self.view.frame, afterScreenUpdates: true)
@@ -33,7 +32,6 @@ extension ViewController: UIImagePickerControllerDelegate {
         UIGraphicsEndImageContext()
         
         self.toolBar.isHidden = false
-        self.navigationBar.isHidden = false
         
         return memedImage
     }

@@ -46,7 +46,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BOTTOM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5AP-O9-C3O">
-                                <rect key="frame" x="16" y="510" width="343" height="48"/>
+                                <rect key="frame" x="16" y="506" width="343" height="48"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
@@ -54,22 +54,20 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PxW-Fj-Bi1" firstAttribute="top" secondItem="f1Y-El-9C6" secondAttribute="bottom" id="CNy-UK-HfN"/>
-                            <constraint firstItem="5AP-O9-C3O" firstAttribute="bottom" secondItem="f1Y-El-9C6" secondAttribute="bottom" constant="-16" id="EJ9-C3-8Cr"/>
+                            <constraint firstItem="5AP-O9-C3O" firstAttribute="bottom" secondItem="f1Y-El-9C6" secondAttribute="bottom" constant="-20" id="EJ9-C3-8Cr"/>
                             <constraint firstItem="PxW-Fj-Bi1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IyS-PH-eTV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GDX-uW-a3d" secondAttribute="trailing" constant="16" id="K1z-mU-gjk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5AP-O9-C3O" secondAttribute="trailing" constant="16" id="KfW-ls-X9L"/>
                             <constraint firstItem="PxW-Fj-Bi1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="N1M-pT-Mhk"/>
                             <constraint firstItem="f1Y-El-9C6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="T4c-GB-dGB"/>
                             <constraint firstItem="f1Y-El-9C6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Urd-Rd-s3Y"/>
-                            <constraint firstItem="GDX-uW-a3d" firstAttribute="centerX" secondItem="f1Y-El-9C6" secondAttribute="centerX" id="Zsd-gO-kwJ"/>
-                            <constraint firstItem="5AP-O9-C3O" firstAttribute="centerX" secondItem="f1Y-El-9C6" secondAttribute="centerX" id="Zty-Dx-ftj"/>
-                            <constraint firstItem="PxW-Fj-Bi1" firstAttribute="top" secondItem="f1Y-El-9C6" secondAttribute="bottom" id="fHu-Zi-Wbl"/>
+                            <constraint firstItem="GDX-uW-a3d" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Zsd-gO-kwJ"/>
+                            <constraint firstItem="5AP-O9-C3O" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Zty-Dx-ftj"/>
                             <constraint firstItem="f1Y-El-9C6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iFH-h8-Jyg"/>
                             <constraint firstItem="5AP-O9-C3O" firstAttribute="leading" secondItem="GDX-uW-a3d" secondAttribute="leading" id="k8s-Jr-20N"/>
                             <constraint firstItem="GDX-uW-a3d" firstAttribute="top" secondItem="f1Y-El-9C6" secondAttribute="top" constant="20" id="ozC-4s-fZJ"/>
                             <constraint firstItem="PxW-Fj-Bi1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rEd-32-n2x"/>
-                            <constraint firstItem="5AP-O9-C3O" firstAttribute="trailing" secondItem="GDX-uW-a3d" secondAttribute="trailing" id="vEd-LG-lAv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f1Y-El-9C6" secondAttribute="bottom" constant="44" id="vYh-YW-gyh"/>
                             <constraint firstItem="GDX-uW-a3d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zL5-Ip-ru9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -96,6 +94,7 @@
                         <outlet property="shareButton" destination="ddx-aA-LmM" id="adB-k5-dQU"/>
                         <outlet property="textBottom" destination="5AP-O9-C3O" id="Wwb-h6-6Jo"/>
                         <outlet property="textTop" destination="GDX-uW-a3d" id="9CO-nd-9mE"/>
+                        <outlet property="toolBar" destination="PxW-Fj-Bi1" id="9YK-Dx-ZPf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

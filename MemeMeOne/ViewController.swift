@@ -18,11 +18,20 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var textTop: UITextField!
     @IBOutlet weak var textBottom: UITextField!
     @IBOutlet weak var toolBar: UIToolbar!
-    @IBOutlet weak var navigationBar: UINavigationBar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        shareButton.isEnabled = false
+        cancelButton.isEnabled = false
+        
+        configureTextField(element: textTop)
+        configureTextField(element: textBottom)
+ 
+        memeImage.contentMode = .scaleAspectFit
+    }
+    
+    private func configureTextField(element: UITextField) {
         let memeTextAttributes:[String: Any] = [
             NSAttributedStringKey.strokeColor.rawValue: UIColor.black,
             NSAttributedStringKey.foregroundColor.rawValue: UIColor.white,
@@ -30,18 +39,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             NSAttributedStringKey.strokeWidth.rawValue: -3.0
         ]
         
-        shareButton.isEnabled = false
-        cancelButton.isEnabled = false
-        
-        textTop.delegate = self
-        textTop.defaultTextAttributes = memeTextAttributes
-        textTop.textAlignment = .center
-
-        textBottom.delegate = self
-        textBottom.defaultTextAttributes = memeTextAttributes
-        textBottom.textAlignment = .center
-        
-        memeImage.contentMode = .scaleAspectFit
+        element.delegate = self
+        element.defaultTextAttributes = memeTextAttributes
+        element.textAlignment = .center
     }
     
     override func viewWillAppear(_ animated: Bool) {
