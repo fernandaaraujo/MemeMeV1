@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var memeImage: UIImageView!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
@@ -59,60 +59,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            loadPreviewImage(image: image)
-        }
-        
-        dismiss(animated: true, completion: nil)
-    }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    func generateMemedImage() -> UIImage {
-        self.toolBar.isHidden = true
-        self.navigationBar.isHidden = true
-        
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        view.drawHierarchy(in: self.view.frame, afterScreenUpdates: true)
-        let memedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-        
-        self.toolBar.isHidden = false
-        self.navigationBar.isHidden = false
-        
-        return memedImage
-    }
-    
-    func save(image: UIImage) {
-        let meme = Meme(topText: textTop.text!, bottomText: textBottom.text!, originalImage: memeImage.image!, memedImage: image)
-        
-        let object = UIApplication.shared.delegate
-        let appDelegate = object as! AppDelegate
-        appDelegate.memes.append(meme)
-    }
-    
-    func loadPreviewImage(image: UIImage) {
-        memeImage.image = image
-        shareButton.isEnabled = true
-        cancelButton.isEnabled = true
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        textBottom.text = (textBottom.text?.isEmpty)! ? "" : textBottom.text
-        textTop.text = (textTop.text?.isEmpty)! ? "" : textTop.text
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textBottom.resignFirstResponder()
-        textTop.resignFirstResponder()
-
-        return true
     }
     
     func subscribeToKeyboardNotifications() {
@@ -172,14 +118,14 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBAction func cancelEdit(sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Do you want to cancel editing?", message: nil, preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action: UIAlertAction) in
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction) in
             
             self.memeImage.image = nil
             self.shareButton.isEnabled = false
             self.dismiss(animated: true, completion: nil)
         }))
         
-        alert.addAction(UIAlertAction(title: "Keep editing", style: .default) { (action: UIAlertAction!) in
+        alert.addAction(UIAlertAction(title: "No", style: .default) { (action: UIAlertAction!) in
             alert.dismiss(animated: true, completion: nil)
             }
         )
