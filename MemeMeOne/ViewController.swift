@@ -61,6 +61,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         super.didReceiveMemoryWarning()
     }
     
+    // MARK: Keyboard
+
     func subscribeToKeyboardNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: .UIKeyboardWillHide, object: nil)
@@ -86,18 +88,20 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         return keyboardSize.cgRectValue.height
     }
     
+    // MARK: Actions
+
     @IBAction func pickAnImageFromAlbum(_ sender: Any) {
-        let imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
-        
-        present(imagePicker, animated: true, completion: nil)
+        pickAnImageFrom(.photoLibrary)
     }
     
     @IBAction func pickAnImageFromCamera(_ sender: Any) {
+        pickAnImageFrom(.camera)
+    }
+    
+    private func pickAnImageFrom(_ type: UIImagePickerControllerSourceType) {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        imagePicker.sourceType = .camera
+        imagePicker.sourceType = type
         
         present(imagePicker, animated: true, completion: nil)
     }
