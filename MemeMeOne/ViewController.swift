@@ -126,6 +126,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             
             self.memeImage.image = nil
             self.shareButton.isEnabled = false
+            self.textTop.text = "TOP"
+            self.textBottom.text = "BOTTOM"
             self.dismiss(animated: true, completion: nil)
         }))
         
