@@ -11,13 +11,11 @@ import UIKit
 
 extension ViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        textBottom.text = (textBottom.text?.isEmpty)! ? "" : textBottom.text
-        textTop.text = (textTop.text?.isEmpty)! ? "" : textTop.text
+        textField.text = ""
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textBottom.resignFirstResponder()
-        textTop.resignFirstResponder()
+        textField.resignFirstResponder()
         
         return true
     }
