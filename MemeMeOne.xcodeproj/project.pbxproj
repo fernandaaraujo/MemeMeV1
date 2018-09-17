@@ -14,6 +14,8 @@
 		9106B260214FE2DE004CE30F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9106B25E214FE2DE004CE30F /* LaunchScreen.storyboard */; };
 		9106B26B214FE2DE004CE30F /* MemeMeOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9106B26A214FE2DE004CE30F /* MemeMeOneTests.swift */; };
 		9106B276214FE2DE004CE30F /* MemeMeOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9106B275214FE2DE004CE30F /* MemeMeOneUITests.swift */; };
+		A41A6C556D8B91098E8715B6 /* Pods_MemeMeOneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFC4D7AE98DAF78701DE2DB /* Pods_MemeMeOneTests.framework */; };
+		BE1F71AAA856A70DB7AFF56B /* Pods_MemeMeOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC09372DDAE272987462C96 /* Pods_MemeMeOne.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A46CB3C01489FEE3232F3E3 /* Pods-MemeMeOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMeOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMeOne/Pods-MemeMeOne.release.xcconfig"; sourceTree = "<group>"; };
+		1BC09372DDAE272987462C96 /* Pods_MemeMeOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemeMeOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5CF1AF83637F572BF4C902 /* Pods-MemeMeOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMeOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMeOne/Pods-MemeMeOne.debug.xcconfig"; sourceTree = "<group>"; };
+		6F5538EF5A510CF9B1D1530A /* Pods-MemeMeOneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMeOneTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMeOneTests/Pods-MemeMeOneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9106B252214FE2DC004CE30F /* MemeMeOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMeOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9106B255214FE2DC004CE30F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9106B257214FE2DC004CE30F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		9106B271214FE2DE004CE30F /* MemeMeOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemeMeOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9106B275214FE2DE004CE30F /* MemeMeOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMeOneUITests.swift; sourceTree = "<group>"; };
 		9106B277214FE2DE004CE30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACFAAA18FDD87076E3DCCA6A /* Pods-MemeMeOneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMeOneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMeOneTests/Pods-MemeMeOneTests.release.xcconfig"; sourceTree = "<group>"; };
+		CBFC4D7AE98DAF78701DE2DB /* Pods_MemeMeOneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemeMeOneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1F71AAA856A70DB7AFF56B /* Pods_MemeMeOne.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41A6C556D8B91098E8715B6 /* Pods_MemeMeOneTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		251B09C7C4D51A90467A9732 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BC09372DDAE272987462C96 /* Pods_MemeMeOne.framework */,
+				CBFC4D7AE98DAF78701DE2DB /* Pods_MemeMeOneTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9106B249214FE2DC004CE30F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +100,8 @@
 				9106B269214FE2DE004CE30F /* MemeMeOneTests */,
 				9106B274214FE2DE004CE30F /* MemeMeOneUITests */,
 				9106B253214FE2DC004CE30F /* Products */,
+				C9FE5BF513C9DDDA26DC83B4 /* Pods */,
+				251B09C7C4D51A90467A9732 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +146,17 @@
 			path = MemeMeOneUITests;
 			sourceTree = "<group>";
 		};
+		C9FE5BF513C9DDDA26DC83B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D5CF1AF83637F572BF4C902 /* Pods-MemeMeOne.debug.xcconfig */,
+				0A46CB3C01489FEE3232F3E3 /* Pods-MemeMeOne.release.xcconfig */,
+				6F5538EF5A510CF9B1D1530A /* Pods-MemeMeOneTests.debug.xcconfig */,
+				ACFAAA18FDD87076E3DCCA6A /* Pods-MemeMeOneTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9106B27A214FE2DE004CE30F /* Build configuration list for PBXNativeTarget "MemeMeOne" */;
 			buildPhases = (
+				CBC2B75BE1E2708A2739804C /* [CP] Check Pods Manifest.lock */,
 				9106B24E214FE2DC004CE30F /* Sources */,
 				9106B24F214FE2DC004CE30F /* Frameworks */,
 				9106B250214FE2DC004CE30F /* Resources */,
@@ -149,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9106B27D214FE2DE004CE30F /* Build configuration list for PBXNativeTarget "MemeMeOneTests" */;
 			buildPhases = (
+				A6568B992365F80D63C9A2FD /* [CP] Check Pods Manifest.lock */,
 				9106B262214FE2DE004CE30F /* Sources */,
 				9106B263214FE2DE004CE30F /* Frameworks */,
 				9106B264214FE2DE004CE30F /* Resources */,
+				0D2205EAE778EB94FB31DCD2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +286,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D2205EAE778EB94FB31DCD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MemeMeOneTests/Pods-MemeMeOneTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MemeMeOneTests/Pods-MemeMeOneTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6568B992365F80D63C9A2FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemeMeOneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBC2B75BE1E2708A2739804C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemeMeOne-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9106B24E214FE2DC004CE30F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -315,6 +409,7 @@
 		9106B278214FE2DE004CE30F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -375,6 +470,7 @@
 		9106B279214FE2DE004CE30F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -428,7 +524,9 @@
 		};
 		9106B27B214FE2DE004CE30F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D5CF1AF83637F572BF4C902 /* Pods-MemeMeOne.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemeMeOne/Info.plist;
@@ -445,7 +543,9 @@
 		};
 		9106B27C214FE2DE004CE30F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A46CB3C01489FEE3232F3E3 /* Pods-MemeMeOne.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemeMeOne/Info.plist;
@@ -462,8 +562,9 @@
 		};
 		9106B27E214FE2DE004CE30F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F5538EF5A510CF9B1D1530A /* Pods-MemeMeOneTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemeMeOneTests/Info.plist;
@@ -482,8 +583,9 @@
 		};
 		9106B27F214FE2DE004CE30F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACFAAA18FDD87076E3DCCA6A /* Pods-MemeMeOneTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemeMeOneTests/Info.plist;
@@ -503,7 +605,7 @@
 		9106B281214FE2DE004CE30F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemeMeOneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -522,7 +624,7 @@
 		9106B282214FE2DE004CE30F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemeMeOneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
