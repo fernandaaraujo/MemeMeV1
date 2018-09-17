@@ -14,6 +14,7 @@
 		9106B260214FE2DE004CE30F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9106B25E214FE2DE004CE30F /* LaunchScreen.storyboard */; };
 		9106B26B214FE2DE004CE30F /* MemeMeOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9106B26A214FE2DE004CE30F /* MemeMeOneTests.swift */; };
 		9106B276214FE2DE004CE30F /* MemeMeOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9106B275214FE2DE004CE30F /* MemeMeOneUITests.swift */; };
+		9106B28421500E3A004CE30F /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9106B28321500E3A004CE30F /* Meme.swift */; };
 		A41A6C556D8B91098E8715B6 /* Pods_MemeMeOneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFC4D7AE98DAF78701DE2DB /* Pods_MemeMeOneTests.framework */; };
 		BE1F71AAA856A70DB7AFF56B /* Pods_MemeMeOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC09372DDAE272987462C96 /* Pods_MemeMeOne.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		9106B271214FE2DE004CE30F /* MemeMeOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemeMeOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9106B275214FE2DE004CE30F /* MemeMeOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMeOneUITests.swift; sourceTree = "<group>"; };
 		9106B277214FE2DE004CE30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9106B28321500E3A004CE30F /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		ACFAAA18FDD87076E3DCCA6A /* Pods-MemeMeOneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMeOneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMeOneTests/Pods-MemeMeOneTests.release.xcconfig"; sourceTree = "<group>"; };
 		CBFC4D7AE98DAF78701DE2DB /* Pods_MemeMeOneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemeMeOneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 				9106B25C214FE2DE004CE30F /* Assets.xcassets */,
 				9106B25E214FE2DE004CE30F /* LaunchScreen.storyboard */,
 				9106B261214FE2DE004CE30F /* Info.plist */,
+				9106B28321500E3A004CE30F /* Meme.swift */,
 			);
 			path = MemeMeOne;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9106B28421500E3A004CE30F /* Meme.swift in Sources */,
 				9106B258214FE2DC004CE30F /* ViewController.swift in Sources */,
 				9106B256214FE2DC004CE30F /* AppDelegate.swift in Sources */,
 			);
