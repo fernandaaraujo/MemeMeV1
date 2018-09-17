@@ -6,7 +6,9 @@
 //  Copyright © 2018 Udacity. All rights reserved.
 //
 
-import XCTest
+import Quick
+import Nimble
+
 @testable import MemeMeOne
 
 class MemeMeOneTests: XCTestCase {
