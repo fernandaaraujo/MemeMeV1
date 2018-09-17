@@ -76,8 +76,16 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="yKc-iC-2LV">
-                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="ddx-aA-LmM"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="dcZ-bc-yUL"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="ddx-aA-LmM">
+                            <connections>
+                                <action selector="shareMemedImageWithSender:" destination="BYZ-38-t0r" id="VTL-CN-jWk"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="dcZ-bc-yUL">
+                            <connections>
+                                <action selector="cancelEditWithSender:" destination="BYZ-38-t0r" id="wpf-jN-ROz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

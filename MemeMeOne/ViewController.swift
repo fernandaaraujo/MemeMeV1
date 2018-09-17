@@ -17,6 +17,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var cancelButton: UIBarButtonItem!
     @IBOutlet weak var textTop: UITextField!
     @IBOutlet weak var textBottom: UITextField!
+    @IBOutlet weak var toolBar: UIToolbar!
+    @IBOutlet weak var navigationBar: UINavigationBar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,21 +75,26 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
     
     func generateMemedImage() -> UIImage {
-        // TODO: Hide toolbar and navbar
+        self.toolBar.isHidden = true
+        self.navigationBar.isHidden = true
         
-        // Render view to an image
         UIGraphicsBeginImageContext(self.view.frame.size)
         view.drawHierarchy(in: self.view.frame, afterScreenUpdates: true)
         let memedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
-        // TODO: Show toolbar and navbar
+        self.toolBar.isHidden = false
+        self.navigationBar.isHidden = false
         
         return memedImage
     }
     
     func save(image: UIImage) {
         let meme = Meme(topText: textTop.text!, bottomText: textBottom.text!, originalImage: memeImage.image!, memedImage: image)
+        
+        let object = UIApplication.shared.delegate
+        let appDelegate = object as! AppDelegate
+        appDelegate.memes.append(meme)
     }
     
     func loadPreviewImage(image: UIImage) {
@@ -97,8 +104,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        textBottom.text = ""
-        textTop.text = ""
+        textBottom.text = (textBottom.text?.isEmpty)! ? "" : textBottom.text
+        textTop.text = (textTop.text?.isEmpty)! ? "" : textTop.text
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
