@@ -22,8 +22,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        shareButton.isEnabled = false
-        cancelButton.isEnabled = false
+        setButtonState(false)
         
         configureTextField(element: textTop)
         configureTextField(element: textBottom)
@@ -59,6 +58,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func setButtonState(_ state: Bool) {
+        shareButton.isEnabled = state
+        cancelButton.isEnabled = state
     }
     
     // MARK: Keyboard

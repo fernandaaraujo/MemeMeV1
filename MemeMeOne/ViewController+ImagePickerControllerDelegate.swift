@@ -46,7 +46,6 @@ extension ViewController: UIImagePickerControllerDelegate {
     
     func loadPreviewImage(image: UIImage) {
         memeImage.image = image
-        shareButton.isEnabled = true
-        cancelButton.isEnabled = true
+        setButtonState(true)
     }
 }
