@@ -73,8 +73,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     func unsubscribeFromKeyboardNotifications() {
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
+       NotificationCenter.default.removeObserver(self)
     }
     
     @objc func keyboardWillShow(_ notification:Notification) {
