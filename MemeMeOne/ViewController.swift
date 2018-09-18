@@ -77,7 +77,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     @objc func keyboardWillShow(_ notification:Notification) {
-        view.frame.origin.y = getKeyboardHeight(notification) * -1
+        if textBottom.isEditing {
+            view.frame.origin.y = getKeyboardHeight(notification) * -1
+        }
     }
     
     @objc func keyboardWillHide(_ notification:Notification) {
